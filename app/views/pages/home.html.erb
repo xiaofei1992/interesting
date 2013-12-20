@@ -10,8 +10,16 @@
 
 
 	<div class="center">
-	  <%= link_to "Login", "#", class: "btn btn-primary btn-large"%>
-	  <%= link_to "Logout", "#", class: "btn btn-primary btn-large btn-danger" %>
+	
+		
+	<% if user_signed_in? %>
+	# Signed in,  do something here! 
+	
+	<% else %>
+    	<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-large"  %>
+
+	<% end %>
+
 	</div>
 
 
