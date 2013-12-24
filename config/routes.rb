@@ -1,9 +1,15 @@
 Interesting::Application.routes.draw do
   
+  resources :reviews
+
+  resources :pins
+
+  get "posts/baby"
   devise_for :admins
   devise_for :users
 root "pages#home"
 get "about" => "pages#about"
+get "about/him" => "pages#about/him"
 	 
 
   # The priority is based upon order of creation: first created -> highest priority.
