@@ -17,7 +17,7 @@ class ReviewsControllerTest < ActionController::TestCase
   end
 
   test "should create review" do
-    assert_difference('Review.count') do
+    assert_difference('Reviews.count') do
       post :create, review: { description: @review.description }
     end
 
@@ -40,10 +40,10 @@ class ReviewsControllerTest < ActionController::TestCase
   end
 
   test "should destroy review" do
-    assert_difference('Review.count', -1) do
+    assert_difference('Reviews.count', -1) do
       delete :destroy, id: @review
     end
 
-    assert_redirected_to reviews_path
+    assert_redirected_to reviews_index_path
   end
 end

@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class PinTest < ActiveSupport::TestCase
+class ReviewsTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

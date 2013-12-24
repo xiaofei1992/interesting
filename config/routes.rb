@@ -1,8 +1,8 @@
 Interesting::Application.routes.draw do
   
-  resources :reviews
+  resources :comments
 
-  resources :pins
+  resources :reviews
 
   get "posts/baby"
   devise_for :admins
