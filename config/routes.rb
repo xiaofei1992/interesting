@@ -1,12 +1,8 @@
 Interesting::Application.routes.draw do
   
-  resources :comments
-
-  resources :reviews
-
+  devise_for :users
   get "posts/baby"
   devise_for :admins
-  devise_for :users
 root "pages#home"
 get "about" => "pages#about"
 get "about/him" => "pages#about/him"
